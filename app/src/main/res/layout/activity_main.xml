@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ieee.nubathroomfinder.MainActivity">
+
+    <Button
+        android:id="@+id/ground_floor_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="G"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/first_floor_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ground_floor_button"/>
+
+    <Button
+        android:id="@+id/second_floor_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/first_floor_button" />
+
+    <Button
+        android:id="@+id/third_floor_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/second_floor_button" />
+
+    <Button
+        android:id="@+id/fourth_floor_button"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/third_floor_button"/>
+
+    <ImageView
+        android:id="@+id/first_floor_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tech_map_first_floor"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ground_floor_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tech_map_ground_floor"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
