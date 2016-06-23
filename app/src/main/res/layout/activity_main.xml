@@ -64,5 +64,26 @@
         android:src="@drawable/tech_map_ground_floor"
         android:visibility="gone"/>
 
+    <ImageView
+        android:id="@+id/second_floor_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tech_map_second_floor"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/third_floor_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tech_map_third_floor"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/fourth_floor_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tech_map_fourth_floor"
+        android:visibility="gone"/>
+
 
 </RelativeLayout>
