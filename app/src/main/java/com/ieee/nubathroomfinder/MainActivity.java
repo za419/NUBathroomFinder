@@ -54,16 +54,16 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.second_floor_button)
     public void showSecondFloorMap() {
- //       showMap(secondFloorImage);
+        showMap(secondFloorImage);
     }
 
     @OnClick(R.id.third_floor_button)
     public void showThirdFloorMap() {
- //       showMap(thirdFloorImage);
+        showMap(thirdFloorImage);
     }
 
     @OnClick(R.id.fourth_floor_button)
     public void showFourthFloorMap() {
- //       showMap(fourthFloorImage);
+        showMap(fourthFloorImage);
     }
 }
