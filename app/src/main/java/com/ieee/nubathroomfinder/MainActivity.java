@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
     public void clearMapsFromScreen() {
         firstFloorImage.setVisibility(View.GONE);
         groundFloorImage.setVisibility(View.GONE);
- //       secondFloorImage.setVisibility(View.GONE);
- //       thirdFloorImage.setVisibility(View.GONE);
- //       fourthFloorImage.setVisibility(View.GONE);
+        secondFloorImage.setVisibility(View.GONE);
+        thirdFloorImage.setVisibility(View.GONE);
+        fourthFloorImage.setVisibility(View.GONE);
     }
 
     // Clear maps from the screen and show the map passed in as argument
