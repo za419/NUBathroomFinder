@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -50,40 +51,51 @@
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/third_floor_button"/>
 
-    <ImageView
-        android:id="@+id/first_floor_image"
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/tech_map_first_floor"
-        android:visibility="gone"/>
+        android:layout_below="@id/first_floor_button"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/first_floor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tech_map_first_floor"
+                android:visibility="gone"/>
 
-    <ImageView
-        android:id="@+id/ground_floor_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tech_map_ground_floor"
-        android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/ground_floor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tech_map_ground_floor"
+                android:visibility="gone"/>
 
-    <ImageView
-        android:id="@+id/second_floor_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tech_map_second_floor"
-        android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/second_floor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tech_map_second_floor"
+                android:visibility="gone"/>
 
-    <ImageView
-        android:id="@+id/third_floor_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tech_map_third_floor"
-        android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/third_floor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tech_map_third_floor"
+                android:visibility="gone"/>
 
-    <ImageView
-        android:id="@+id/fourth_floor_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tech_map_fourth_floor"
-        android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/fourth_floor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tech_map_fourth_floor"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
